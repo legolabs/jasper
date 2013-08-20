@@ -12,4 +12,9 @@
     "require": {
 
     }
+    "autoload": {
+        "psr-0": {
+            "Jasper\\": "./",
+        }
+    }
 }
