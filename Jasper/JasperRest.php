@@ -63,7 +63,7 @@ class JasperRest {
             case 503: return 'Service Unavailable';
             case 504: return 'Gateway Time-out';
             case 505: return 'HTTP Version Not Suppported';
-            defaul:   return 'Unknown';
+            default:   return 'Unknown';
         }
     }
 
