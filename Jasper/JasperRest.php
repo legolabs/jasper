@@ -75,7 +75,8 @@ class JasperRest {
         }
 
         try {
-            $curl = curl_init('http://' . $this->host . $url);
+            $scheme = $this->ssl === false ? 'http' : 'https';
+            $curl = curl_init($scheme . '://' . $this->host . $url);
             //curl_setopt($curl, CURLOPT_FAILONERROR,         true);
             curl_setopt($curl, CURLOPT_FORBID_REUSE,        false);
             curl_setopt($curl, CURLOPT_FRESH_CONNECT,       false);
