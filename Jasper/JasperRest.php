@@ -12,7 +12,7 @@ class JasperRest {
     private $ssl = false;
     
     private $cookieFile = '/tmp/jasper_rest_cookies';
-    private $userAgent  = 'Jasper.php/0.1 (+http://blog.flowl.info/p/projekte/jasper-php/)';
+    private $userAgent  = 'Jasper.php/0.1 (+https://blog.flowl.info/2013/jasper-php-library-on-github/)';
 
 
     public function __construct($host, $ssl = false) {
@@ -81,7 +81,7 @@ class JasperRest {
             curl_setopt($curl, CURLOPT_FRESH_CONNECT,       false);
             curl_setopt($curl, CURLOPT_HEADER,              false);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER,      true);
-            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST,      0);
+            //curl_setopt($curl, CURLOPT_SSL_VERIFYHOST,      0);
             curl_setopt($curl, CURLOPT_DNS_CACHE_TIMEOUT,   1024);
             curl_setopt($curl, CURLOPT_COOKIEFILE,          $this->cookieFile);
             curl_setopt($curl, CURLOPT_COOKIEJAR,           $this->cookieFile);
