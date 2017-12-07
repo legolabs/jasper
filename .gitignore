@@ -2,3 +2,6 @@
 /*.iml
 
 /vendor/
+.settings
+.buildpath
+.project
