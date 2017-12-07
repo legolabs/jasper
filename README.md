@@ -1,6 +1,6 @@
 Jasper.php
 ======
-Flowl Jasper project clone. https://github.com/flowl/jasper
+Flowl Jasper project fork. https://github.com/flowl/jasper
 
 PHP library providing smooth access to JasperReports server via REST / REST v2 API
 
